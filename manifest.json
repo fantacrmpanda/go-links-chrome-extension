@@ -1,0 +1,21 @@
+{
+  "name": "Replace go/ URLs",
+  "version": "0.1",
+  "manifest_version": 3,
+  "description": "Replaces URLs starting with go/ with your desired destination",
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+      "id": "ruleset_1",
+      "enabled": true,
+      "path": "rules.json"
+      }
+    ]
+  },
+  "permissions": [
+      "declarativeNetRequest",
+      "declarativeNetRequestFeedback",
+      "declarativeNetRequestWithHostAccess"
+  ],
+  "host_permissions": ["https://*/*", "http://*/*"]
+}
