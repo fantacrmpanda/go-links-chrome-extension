@@ -1,6 +1,6 @@
 {
   "name": "Replace go/ URLs",
-  "version": "0.1",
+  "version": "0.2",
   "manifest_version": 3,
   "description": "Replaces URLs starting with go/ with your desired destination",
   "declarative_net_request": {
@@ -17,5 +17,8 @@
       "declarativeNetRequestFeedback",
       "declarativeNetRequestWithHostAccess"
   ],
+  "background": {
+    "service_worker": "background.js"
+  },
   "host_permissions": ["https://*/*", "http://*/*"]
 }
