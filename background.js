@@ -11,7 +11,7 @@ chrome.runtime.onInstalled.addListener(() => {
                 action: {
                     type: "redirect",
                     redirect: {
-                        regexSubstitution: "http://localhost:8080/\\1"
+                        regexSubstitution: "http://go.lovecrm.ai/\\1"
                     }
                 }
             }
